@@ -1,0 +1,22 @@
+package com.briup.smart.mapper;
+
+import com.briup.smart.bean.SmartEvent;
+
+import java.util.Date;
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface SmartEventMapper {
+	int deleteByPrimaryKey(Integer id);
+    int insert(SmartEvent record);
+    //SmartEvent selectByPrimaryKey(Integer id);
+    int updateByPrimaryKey(SmartEvent record);
+	List<SmartEvent> selectAll();
+    List<SmartEvent> selectthree(String content,String type,Date daytime);
+    List<SmartEvent> selectContent(String content,String mes);
+    List<SmartEvent> selectType(String Type);
+	List<SmartEvent> selectByDay(Date daytime);
+	int updateid(Integer id);
+}

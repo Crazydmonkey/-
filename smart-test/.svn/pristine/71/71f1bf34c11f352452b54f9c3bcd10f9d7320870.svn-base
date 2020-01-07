@@ -1,0 +1,55 @@
+package com.briup.smart.bean;
+
+import java.util.Date;
+
+public class SmartCo2 {
+    private Integer cId;
+
+    private Date cTime ;
+
+    private String cValue;
+
+    private String cLevel;
+    public SmartCo2() {
+		// TODO Auto-generated constructor stub
+	}
+
+    public SmartCo2(Date time, String value, String level) {
+		// TODO Auto-generated constructor stub
+    	this.cTime = time;
+    	this.cValue = value;
+    	this.cLevel = level;
+	}
+
+	public Integer getcId() {
+        return cId;
+    }
+
+    public void setcId(Integer cId) {
+        this.cId = cId;
+    }
+
+    public Date getcTime() {
+        return cTime;
+    }
+
+    public void setcTime(Date cTime) {
+        this.cTime = cTime;
+    }
+
+    public String getcValue() {
+        return cValue;
+    }
+
+    public void setcValue(String cValue) {
+        this.cValue = cValue == null ? null : cValue.trim();
+    }
+
+    public String getcLevel() {
+        return cLevel;
+    }
+
+    public void setcLevel(String cLevel) {
+        this.cLevel = cLevel == null ? null : cLevel.trim();
+    }
+}
